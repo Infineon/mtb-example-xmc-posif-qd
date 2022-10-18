@@ -41,14 +41,14 @@
 #include "cybsp.h"
 #include "cy_utils.h"
 #include "xmc_posif.h"
-#include "retarget_io.h"
+#include "cy_retarget_io.h"
 #include "stdio.h"
 
 /*******************************************************************************
 *  Macros
 *******************************************************************************/
 /* Define macros for XMC14x Boot kit */
-#ifdef TARGET_KIT_XMC14_BOOT_001
+#if (UC_SERIES == XMC14)
 #define INPUT_0  (XMC_POSIF_INPUT_PORT_B)     /* Choice of INPUT_PORT_B */
 #define INPUT_1  (XMC_POSIF_INPUT_PORT_A)     /* Choice of INPUT_PORT_A */
 #define INPUT_2  (XMC_POSIF_INPUT_PORT_A)     /* Choice of INPUT_PORT_A */
@@ -64,7 +64,7 @@
 #endif
 
 /* Define macros for XMC47x Relax kit */
-#ifdef TARGET_KIT_XMC47_RELAX_V1
+#if (UC_SERIES == XMC47)
 #define INPUT_0  (XMC_POSIF_INPUT_PORT_B)     /* Choice of INPUT_PORT_B */
 #define INPUT_1  (XMC_POSIF_INPUT_PORT_B)     /* Choice of INPUT_PORT_B */
 #define INPUT_2  (XMC_POSIF_INPUT_PORT_A)     /* Choice of INPUT_PORT_A */
@@ -124,6 +124,7 @@ XMC_POSIF_QD_CONFIG_t posif_qd_config =
 *  int
 *
 *******************************************************************************/
+
 int main(void)
 {
     cy_rslt_t result;
@@ -148,7 +149,7 @@ int main(void)
     }
 
     /* Initialize retarget-io to use the debug UART port */
-    retarget_io_init();
+    cy_retarget_io_init(CYBSP_DEBUG_UART_HW);
 
     printf("======================== \r\n");
     printf("XMC POSIF QD example \r\n");
