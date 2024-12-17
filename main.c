@@ -164,7 +164,7 @@ static bool LED_turned_on_once = false;
                     loop_entered = true;
                 }
             #else
-                printf("POSITION: %5d INTERVAL: %lu\r\n", position_value, TIME_BETWEEN_TICKS_TICK_NS * (uint32_t)time_between_ticks);
+                printf("POSITION: %5d INTERVAL: %lu\r\n", position_value, TIME_BETWEEN_TICKS_TICK_NS * (unsigned long)time_between_ticks);
             #endif
             }
             XMC_CCU8_SLICE_ClearEvent(PHASE_B_HW, XMC_CCU8_SLICE_IRQ_ID_PERIOD_MATCH);

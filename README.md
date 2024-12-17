@@ -4,11 +4,11 @@ This example demonstrates a position interface (POSIF) module in quadrature deco
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-xmc-posif-qd)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzI3MDciLCJTcGVjIE51bWJlciI6IjAwMi0zMjcwNyIsIkRvYyBUaXRsZSI6IlhNQyZ0cmFkZTsgTUNVOiBQT1NJRiBRRCIsInJpZCI6InBzeXUiLCJEb2MgdmVyc2lvbiI6IjIuMS4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJOL0EifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzI3MDciLCJTcGVjIE51bWJlciI6IjAwMi0zMjcwNyIsIkRvYyBUaXRsZSI6IlhNQyZ0cmFkZTsgTUNVOiBQT1NJRiBRRCIsInJpZCI6Imhvc2Frb3RlbmFnYSIsIkRvYyB2ZXJzaW9uIjoiMi4xLjEiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6Ik4vQSJ9)
 
 ## Requirements
 
-- [ModusToolbox&trade; software](https://www.infineon.com/modustoolbox) v3.0
+- [ModusToolbox&trade; software](https://www.infineon.com/modustoolbox) v3.0 or later (tested with v3.3)
 - [SEGGER J-Link software](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
 - Programming language: C
 - Associated parts: All [XMC&trade; MCU](https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microcontroller-based-on-arm-cortex-m/) parts
@@ -16,8 +16,6 @@ This example demonstrates a position interface (POSIF) module in quadrature deco
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
 - GNU Arm&reg; embedded compiler v10.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
-- Arm&reg; compiler v6.16 (`ARM`)
-- IAR C/C++ compiler v9.30.1 (`IAR`)
 
 ## Supported kits (make variable 'TARGET')
 
@@ -309,11 +307,13 @@ Document title: *CE232707* - *XMC&trade; MCU: POSIF QD*
  1.0.0   | New code example
  2.0.0   | Updated to support ModusToolbox™ software v3.0. This CE is not be backward compatible with previous versions of ModusToolbox™ software
  2.1.0   | Added support for POSIF personality |
+| 2.1.1   | Updated README and Fixed build warnings|
+
 ------
 
 All other trademarks or registered trademarks referenced herein are the property of their respective owners.
 
-© 2022 Infineon Technologies AG
+© 2022-2024 Infineon Technologies AG
 
 All Rights Reserved.
 
